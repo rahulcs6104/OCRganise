@@ -22,6 +22,7 @@ OCRganise is a Progressive Web App (PWA), so it works seamlessly on both phones 
 **Backend**: Powered by Gemini AI to categorize and process scanned items intelligently.
 **OCR**: Uses TabScanner OCR for extracting text from receipts.
 **Database**: MongoDB stores user data, receipt details, and expense tracking information.
+**Reports**: Recharts, and Shadcn UI
 
 ##Challenges we ran into
 -Handling item splitting dynamically across multiple users was trickier than expected.
