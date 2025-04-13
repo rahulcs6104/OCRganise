@@ -1,0 +1,15 @@
+@keyframes pulse-custom {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.15);
+    opacity: 0.8;
+  }
+}
+
+.animate-pulse-custom {
+  animation: pulse-custom 1.5s ease-in-out infinite;
+}
