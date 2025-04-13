@@ -122,14 +122,6 @@ export default function CategoryPage() {
     return colors[index % colors.length]
   }
 
-  // Function to format category name for display
-  const formatCategoryName = (category: string) => {
-    if (category === "Entertainment") {
-      return "enter~"
-    }
-    return category
-  }
-
   return (
     <main
       className="min-h-screen flex flex-col items-center p-4 relative overflow-hidden"
@@ -183,7 +175,9 @@ export default function CategoryPage() {
               >
                 <div className="flex flex-col h-32 justify-between">
                   <div className="flex justify-between items-start">
-                    <h2 className="text-white text-sm font-bold break-words">{formatCategoryName(category)}</h2>
+                    <h2 className="text-white text-sm font-bold max-w-[80%] overflow-hidden">
+                      {category === "Entertainment" ? <span className="inline-block">enter~</span> : category}
+                    </h2>
                     <Tag className="text-white/80" size={16} />
                   </div>
                   <div className="mt-auto">

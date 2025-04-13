@@ -53,4 +53,11 @@
   .card-text {
     font-size: 0.75rem;
   }
+
+  /* Ensure category names don't overflow */
+  h2.text-sm {
+    font-size: 0.75rem;
+    word-break: break-word;
+    max-width: 70%;
+  }
 }
